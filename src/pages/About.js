@@ -1,10 +1,12 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Map from "../components/Map";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div>
+    <div className="aboutPage">
       <Navigation />
       <h1 className="title">À propos</h1>
       <div className="infoContainer">
@@ -38,6 +40,21 @@ const About = () => {
           <p>
             J’ai déjà accompagné plus de 300 élèves dans leur apprentissage !
           </p>
+        </div>
+        <div className="banner">
+          <p>
+            Je t’aide à atteindre tes objectifs, à dépasser tes blocages et
+            prendre confiance en toi ! Je suis là pour t’accompagner dans ce
+            voyage : nous partons de là ou tu es et nous allons là où tu veux
+            aller !
+          </p>
+          <Link to="/services" className="btn">
+            En savoir plus
+          </Link>
+        </div>
+        <div className="mapCountries">
+          <h2>Les pays et îles francophones</h2>
+          <Map />
         </div>
       </div>
       <Footer />

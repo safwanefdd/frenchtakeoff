@@ -1,0 +1,78 @@
+.aboutPage {
+  .info {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #f4f4f4;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+
+  .banner {
+    position: relative;
+    background: url("../../assets/images/arc_de_triomphe.jpg") no-repeat center
+      center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 2rem 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    p {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      z-index: 2;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .btn {
+      position: relative;
+      z-index: 2;
+      margin-top: 1.5rem;
+      text-align: center;
+
+      @media screen and (min-width: 100px) {
+        font-size: 0.6rem;
+        max-width: 150px;
+      }
+
+      @media screen and (min-width: 275px) {
+        font-size: 0.8rem;
+        max-width: 250px;
+      }
+
+      @media screen and (min-width: 450px) {
+        font-size: 1rem;
+        max-width: 300px;
+      }
+    }
+  }
+}

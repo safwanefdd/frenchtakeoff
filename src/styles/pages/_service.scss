@@ -1,0 +1,46 @@
+.servicePage {
+
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    p {
+      width: 420px;
+      font-size: .9rem;
+      line-height: 1.5;
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
+
+  .switcherContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
+    button {
+      background-color: $color-secondary;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-family: "Bold";
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      border-radius: 5px;
+      margin: 0 10px;
+
+      &:hover {
+        background-color: $color-tertiary;
+        color: $color-dark;
+        transform: scale(1.05);
+      }
+
+      &.active {
+        background-color: $color-primary;
+        color: $color-dark;
+      }
+    }
+  }
+}

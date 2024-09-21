@@ -2,7 +2,8 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import test from "../assets/images/test.jpeg";
+import gift from "../assets/images/gift.jpeg";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
       <div className="gift">
         <h2>Télécharge des ressources gratuites ici</h2>
         <div className="image">
-          <img src={test} alt="gift" />
+          <img src={gift} alt="gift" />
         </div>
         <Link to="/resources" className="btn">
           Télécharger
@@ -68,9 +69,25 @@ const Home = () => {
       </div>
       <div className="newsletterContainer">
         <h2>Newsletter</h2>
+        <div className="form">
+          <iframe
+            title="Newsletter Signup Form"
+            data-w-type="embedded"
+            scrolling="no"
+            src="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a"
+          ></iframe>
+
+          <script
+            type="text/javascript"
+            src="https://app.mailjet.com/pas-nc-embedded-v1.js"
+          ></script>
+        </div>
+        <Link to="/newsletter" className="btn">
+          Si le formulaire ne s'affiche pas correctement, clique ici
+        </Link>
       </div>
       <div className="testimonialsContainer">
-        <h2>Témoignages</h2>
+        <Testimonials />
       </div>
       <Footer />
     </div>
