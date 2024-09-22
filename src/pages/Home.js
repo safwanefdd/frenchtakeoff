@@ -27,8 +27,8 @@ const Home = () => {
         <div className="image">
           <img src={gift} alt="gift" />
         </div>
-        <Link to="/resources" className="btn">
-          Télécharger
+        <Link target="_blank" to="/resources" className="btn">
+          Télécharger ↗
         </Link>
       </div>
       <div className="podcastSpotify">
@@ -82,8 +82,8 @@ const Home = () => {
             src="https://app.mailjet.com/pas-nc-embedded-v1.js"
           ></script>
         </div>
-        <Link to="/newsletter" className="btn">
-          Si le formulaire ne s'affiche pas correctement, clique ici
+        <Link target="_blank" to="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a" className="btn">
+          Si le formulaire ne s'affiche pas correctement, clique ici ↗
         </Link>
       </div>
       <div className="testimonialsContainer">

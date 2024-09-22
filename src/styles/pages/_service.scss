@@ -7,7 +7,8 @@
     flex-direction: column;
     
     p {
-      width: 420px;
+      max-width: 420px;
+      min-width: 240px;
       font-size: .9rem;
       line-height: 1.5;
       margin: 1rem 0;
@@ -41,6 +42,84 @@
         background-color: $color-primary;
         color: $color-dark;
       }
+    }
+  }
+
+  .queChoisir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+    .card {
+      width: 100%;
+      max-width: 550px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      transition: transform 0.3s ease;
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 45%;
+      }
+
+      @media screen and (min-width: 1024px) {
+        max-width: 30%;
+      }
+
+      @media screen and (min-width: 1280px) {
+        max-width: 25%;
+        
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: .9rem;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+
+          &::before {
+            content: "❌";
+            margin-right: 10px;
+          }
+
+          &.true::before {
+            content: "✅";
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .niveau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    p {
+      font-size: 1rem;
+      margin: 1rem 0;
+      text-align: center;
     }
   }
 }

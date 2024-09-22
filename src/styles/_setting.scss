@@ -2,6 +2,7 @@ $color-primary: #ffb69f;
 $color-secondary: #f98963;
 $color-tertiary: #aecac6;
 $color-quaternary: #faebe2;
+$color-emerald-green: #50c878;
 $color-dark: #333333;
 
 @font-face {
@@ -22,9 +23,9 @@ $color-dark: #333333;
 html {
   scroll-behavior: smooth;
   transition: 0.3s ease-out;
+  overflow-x: hidden;
 
   body {
-    overflow-x: hidden;
     padding: 0;
     margin: 0;
     box-sizing: border-box;

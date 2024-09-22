@@ -1,23 +1,42 @@
-@import "../setting";
-
 .NavigationBar {
   background-color: $color-quaternary;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; // Réduire le padding
   box-shadow: 0 2px 4px rgba($color-dark, 0.1);
   transition: background-color 0.3s ease;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box; // Ajouté pour éviter le débordement
 
   &:hover {
     background-color: lighten($color-quaternary, 5%);
   }
 
+  .burger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $color-dark;
+
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
   .navigation {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%; // Assurez-vous que la largeur est de 100%
+    overflow: hidden; // Empêche le débordement
+    margin: 0 auto; // Centrer le menu
 
     ul {
       list-style: none;
       display: flex;
-      gap: 2rem;
+      gap: 1rem; // Assurez-vous que l'écart est approprié
       padding: 0;
       margin: 0;
 
@@ -28,7 +47,7 @@
           font-family: "Bold", sans-serif;
           font-size: 1rem;
           color: $color-dark;
-          padding: 0.5rem 1rem;
+          padding: 0.5rem 0.5rem; // Ajustez le padding si nécessaire
           transition: color 0.3s ease, transform 0.3s ease;
 
           &.nav-active {
@@ -58,6 +77,38 @@
             transform-origin: left;
           }
         }
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%; // Positionnez juste en dessous du menu burger
+      left: 0;
+      width: 100%; // La largeur du menu est de 100%
+      background-color: $color-quaternary;
+      padding: 1rem;
+      max-height: 0; // Masquer le menu par défaut
+      overflow: hidden; // Empêche le débordement
+      transition: max-height 0.3s ease; // Transition pour l'animation
+      border-bottom: 1px solid $color-dark;
+      box-shadow: 0 2px 4px rgba($color-dark, 0.1);
+      display: none; // Masquer le menu par défaut
+
+      &.open {
+        max-height: 200px; // Ajustez la hauteur maximale selon le contenu
+        display: block; // Afficher le menu lorsqu'il est ouvert
+        box-shadow: 0 20px 20px 3px $color-dark;
+        z-index: 100;
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0; // Assurez-vous qu'il n'y a pas de padding
+        margin: 0; // Assurez-vous qu'il n'y a pas de margin
+        width: 100%; // S'assurer que la liste prend 100% de la largeur
       }
     }
   }

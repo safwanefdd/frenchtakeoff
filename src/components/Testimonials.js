@@ -44,8 +44,23 @@ const Testimonials = () => {
           <img src={testimonial6} alt="Avis 6" />
         </div>
       </div>
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <button onClick={closeModal}>X</button>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
+          },
+          content: {
+            maxWidth: "90%", // Limite la largeur
+            maxHeight: "90%", // Limite la hauteur
+            margin: "auto", // Centre le modal
+            padding: "0", // Supprime le padding
+            borderRadius: "10px", // Ajoute des coins arrondis
+          },
+        }}
+      >
+        <button className="close-modal" onClick={closeModal}>X</button>
         {selectedImage && <img src={selectedImage} alt="Selected" />}
       </Modal>
     </div>
