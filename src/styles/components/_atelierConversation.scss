@@ -1,0 +1,80 @@
+@import "../setting";
+
+.atelierConversationInfo {
+  .card {
+    background-color: $color-quaternary;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+
+  .infoAtelier {
+    background-color: $color-secondary;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    ul {
+
+      li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+          content: '➡';
+          position: absolute;
+          left: 0;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .tarif {
+    background-color: $color-emerald-green;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .cardTarif {
+      background-color: $color-quaternary;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

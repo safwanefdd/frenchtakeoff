@@ -29,9 +29,6 @@ const Navigation = () => {
                     <li className='nav-item'>
                         <NavLink target='_blank' to='https://billing.stripe.com/p/login/3cs03h1N409K5WM288' className={(nav) => (nav.isActive ? "nav-active" : "")} > Compte ↗ </NavLink>
                     </li>
-                    <li className="nav-item">
-                        <NavLink target='_blank' to='/test-de-francais' className={(nav) => (nav.isActive ? "nav-active" : "")} > Faire un test ↗ </NavLink>
-                    </li>
                 </ul>
             </nav>
         </div>

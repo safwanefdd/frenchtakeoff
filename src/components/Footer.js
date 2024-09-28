@@ -9,14 +9,14 @@ const Footer = () => {
       <p>&copy; {currentYear} French Take Off. Tous droits réservés.</p>
       <div className="socialLinks">
         <a
-          href="https://www.facebook.com"
+          href="https://wa.me/0632012245"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i class="fa-brands fa-whatsapp"></i>
         </a>
         <a
-          href="https://www.twitter.com"
+          href="mailto:contact@french-take-off.com"
           target="_blank"
           rel="noopener noreferrer"
         >
