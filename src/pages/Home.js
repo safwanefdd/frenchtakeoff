@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import gift from "../assets/images/gift.jpeg";
 import Testimonials from "../components/Testimonials";
+import InstagramBanner from "../components/InstagramBanner";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
         <div className="image">
           <img src={gift} alt="gift" />
         </div>
-        <Link target="_blank" to="/resources" className="btn">
+        <Link target="_blank" to="/ressources" className="btn">
           Télécharger ↗
         </Link>
       </div>
@@ -49,9 +50,8 @@ const Home = () => {
       <div className="instaFeed">
         <h2>Retrouve moi sur Instagram</h2>
         <div className="instaBanner">
-          <p style={{ textAlign: "center" }}>
-            <i>AJOUTER UNE BANNIERE INSTA</i>
-          </p>
+            <InstagramBanner />
+            <p><i>Bannière Insta</i></p>
         </div>
       </div>
       <div className="moreInfo">

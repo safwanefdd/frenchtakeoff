@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
-import samplePDF from '../assets/PDF/Conditions générales de vente.pdf';
+import samplePDF from '../assets/PDF/Politique de confidentialité.pdf';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const CGV = () => {
+const PDC = () => {
     const [pageNumber, setPageNumber] = useState(1);
     const [numPages, setNumPages] = useState(null);
 
@@ -18,7 +18,7 @@ const CGV = () => {
         <div>
             <Navigation/>
             <div className={"PDFContainer"}>
-                <h2>Conditions Générales de Ventes</h2>
+                <h2>Politique de Confidentialité</h2>
                 <Document file={samplePDF} onLoadSuccess={onDocumentLoadSuccess}>
                     <Page pageNumber={pageNumber}/>
                 </Document>
@@ -40,9 +40,9 @@ const CGV = () => {
                     </button>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 };
 
-export default CGV;
+export default PDC;

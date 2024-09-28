@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div className="footerLinks">
         <Link to="/cgv" target="_blank">Conditions Générales de Ventes</Link>
-        <Link to="/privacy-policy">Politique de confidentialité</Link>
+        <Link to="/pdc" target="_blank">Politique de confidentialité</Link>
       </div>
     </div>
   );

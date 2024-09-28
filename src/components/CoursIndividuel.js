@@ -22,10 +22,12 @@ const CoursIndividuel = () => {
                         Tu aimes le français et tu souhaites progresser, mais tu te sens
                         bloqué ?
                     </li>
+                    <br/>
                     <li>
                         Tu cherches des réponses sur certains points de la langue comme la
                         grammaire, la prononciation ou le vocabulaire ?
                     </li>
+                    <br/>
                     <li>
                         Tu es passionné par le français et tu as envie d’aller plus loin
                         dans ton apprentissage?

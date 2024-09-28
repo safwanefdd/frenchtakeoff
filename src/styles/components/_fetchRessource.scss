@@ -1,0 +1,77 @@
+@import "../setting";
+
+.fetchRessourcesComponent {
+  margin: 20px auto;
+
+  .ressourcesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ressourceCard {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $color-dark;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .imageContainer {
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+
+    .contentContainer {
+      padding: 15px;
+      background-color: $color-quaternary;
+      h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: $color-primary;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        color: $color-dark;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: $color-primary;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: $color-dark;
+          background-color: $color-tertiary;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}

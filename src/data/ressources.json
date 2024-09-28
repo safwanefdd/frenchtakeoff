@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Ebook Vacances",
+    "description": "Un super ebook pour préparer vos vacances",
+    "image": "/ressources/vacances.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Découvre Marseille",
+    "description": "Un guide pour découvrir Marseille",
+    "image": "/ressources/marseille.jpg"
+  }
+]
