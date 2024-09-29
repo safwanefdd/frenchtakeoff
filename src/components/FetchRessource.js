@@ -1,29 +1,34 @@
-import React, {Component} from 'react';
-import ressources from '../data/ressources.json';
+import React from 'react';
+import {useSelector} from "react-redux";
+import {isEmpty} from "./Utils";
 
 
-class FetchRessource extends Component {
-    render() {
-        return (
-            <div className="fetchRessourcesComponent">
-                <h2>Liste des Ressources</h2>
-                <div className="ressourcesList">
-                    {ressources.map(ressource => (
-                        <div key={ressource.id} className="ressourceCard">
+const FetchRessource = () => {
+
+    const ressources = useSelector(state => state.ressourceReducer);
+    console.log(ressources);
+
+    return (
+        <div className="fetchRessourcesComponent">
+            <h2>Liste des Ressources</h2>
+            <div className="ressourcesList">
+                {!isEmpty(ressources) && ressources.map((ressource, index) => {
+                    return (
+                        <div key={index} className="ressourceCard">
                             <div className="imageContainer">
                                 <img src={ressource.image} alt={ressource.name}/>
                             </div>
                             <div className="contentContainer">
                                 <h3>{ressource.name}</h3>
                                 <p>{ressource.description}</p>
-                                <a href={ressource.link + "?raw=true"} className="btn" download>Télécharger</a>
+                                <a className="btn" href={ressource.link + "?raw=true"}>Voir la ressource</a>
                             </div>
                         </div>
-                    ))}
-                </div>
+                    )
+                })}
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default FetchRessource;
