@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ressources from '../data/ressources.json';
-import {Link} from "react-router-dom"; // Assurez-vous que le chemin d'importation est correct.
+
 
 class FetchRessource extends Component {
     render() {
@@ -16,7 +16,7 @@ class FetchRessource extends Component {
                             <div className="contentContainer">
                                 <h3>{ressource.name}</h3>
                                 <p>{ressource.description}</p>
-                                <Link className={"btn"} to={"/ressources/" + ressource.id}>Voir la ressource</Link>
+                                <a href={ressource.link + "?raw=true"} className="btn" download>Télécharger</a>
                             </div>
                         </div>
                     ))}

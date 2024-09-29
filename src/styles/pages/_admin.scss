@@ -1,0 +1,79 @@
+@import "../setting";
+
+.adminPage {
+  .adminContainer {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 25%;
+      max-width: 50%;
+      padding: 1rem;
+      border: 1px solid $color-primary;
+      border-radius: 5px;
+      background-color: white;
+      margin: 2rem auto;
+
+      input {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid $color-primary;
+        border-radius: 5px;
+      }
+
+      textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid $color-primary;
+        border-radius: 5px;
+        resize: vertical;
+        font-family: "Regular", sans-serif;
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid $color-primary;
+        border-radius: 5px;
+        background-color: $color-primary;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($color-primary, 10%);
+        }
+      }
+
+      .customFileButton {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid $color-primary;
+        border-radius: 5px;
+        background-color: $color-secondary;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($color-secondary, 10%);
+        }
+      }
+
+      // Style pour l'aperçu de l'image
+      .imagePreview {
+        margin-top: 1rem;
+
+        img {
+          max-width: 100%;
+          max-height: 300px;
+          border: 1px solid $color-primary;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
