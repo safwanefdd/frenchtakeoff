@@ -13,13 +13,6 @@
       "description": "Un guide pour découvrir Marseille",
       "image": "/ressources/marseille.jpg",
       "link": "https://github.com/safwanefdd/FrenchTakeOff_Ressources/blob/main/Ebook%20de%CC%81couverte%20Marseille.pdf.zip"
-    },
-    {
-      "id": "2268",
-      "title": "Test",
-      "description": "Test",
-      "link": "Tes.fr",
-      "image": {}
     }
   ]
 }

@@ -13,32 +13,45 @@ const About = () => {
         <div className="info">
           <h2>Qui suis-je ?</h2>
           <p>
-            Je m’appelle Nathalie, je suis française et j’habite actuellement
-            dans le sud de la France. J’ai une grande famille : 6 enfants et un
-            petit fils ! Mes enfants sont grands maintenant. J’ai aussi un chat
-            et un lapin !
+            Salut, je m'appelle Nathalie. Passionnée par l’éducation, j’ai
+            commencé par suivre une formation Montessori avant de travailler
+            avec des enfants, puis des adultes. Au fil des années, j'ai acquis
+            une solide expérience en tant que bénévole dans l'alphabétisation et
+            l'enseignement du français. En 2019, avec l’arrivée du Covid, j’ai
+            décidé de me tourner vers l'enseignement en ligne. Et comme cette
+            expérience m'a beaucoup plu, j'ai choisi de m'y consacrer
+            entièrement.
           </p>
           <p>
-            J’aime voyager, découvrir de nouveaux horizons, de nouvelles
-            cultures et de nouvelles saveurs (je suis très gourmande !) J’aime
-            tout particulièrement la nature et les animaux. Je suis professeure
-            de français langue étrangère diplômée de l’Alliance française de
-            Paris. j’enseigne le français en ligne depuis plus de 5 ans sur
-            différentes plateformes de langues et j’ai créé mon école de langue
-            en 2024 pour être indépendante.
+            Mon approche pédagogique repose sur l’accompagnement personnalisé et
+            l'adaptation aux besoins spécifiques de chaque apprenant. Que tu
+            sois débutant ou que tu souhaites perfectionner tes compétences, je
+            suis là pour te guider pas à pas. Mon objectif est de rendre
+            l’apprentissage du français non seulement accessible, mais aussi
+            amusant et stimulant.
           </p>
           <p>
-            J’adore mon travail ! Ma plus grande satisfaction est de constater
-            les progrès de mes élèves, leurs succès, leur confiance retrouvée et
-            leur joie de pouvoir enfin parler français !
+            Dans mes cours, je mets un point d'honneur à utiliser des méthodes
+            modernes et interactives, tout en intégrant les principes Montessori
+            qui favorisent l’autonomie et la confiance en soi. Je crée un
+            environnement d’apprentissage dynamique où tu peux progresser à ton
+            propre rythme, avec des outils en ligne innovants pour rendre chaque
+            leçon engageante et motivante.
           </p>
           <p>
-            Je suis une personne très patiente. J’enseigne avec beaucoup de
-            douceur et d’attention dans une ambiance joyeuse et détendue. Je
-            m’adapte aux objectifs, besoins et gouts de chacun de mes élèves.
+            Pourquoi choisir mes cours en ligne ? <br />
+            Avec plusieurs années d'expérience, j'ai développé une approche
+            unique qui allie pédagogie bienveillante et utilisation des
+            technologies numériques. Mes élèves apprécient particulièrement ma
+            capacité à rendre l'apprentissage du français fluide et naturel.
+            Ensemble, nous ferons de l’apprentissage une aventure enrichissante
+            et épanouissante.
           </p>
           <p>
-            J’ai déjà accompagné plus de 300 élèves dans leur apprentissage !
+            Si tu es prêt(e) à te lancer dans l'apprentissage du français avec
+            moi, n'hésite pas à me contacter pour en savoir plus sur mes
+            services. Ensemble, nous transformerons ton apprentissage en
+            réussite !
           </p>
         </div>
         <div className="banner">
@@ -54,6 +67,17 @@ const About = () => {
         </div>
         <div className="mapCountries">
           <h2>Les pays et îles francophones</h2>
+          <p>
+            Pourquoi apprendre le français? Le français est bien plus qu'une
+            langue, c'est une véritable porte d'entrée vers un monde riche et
+            diversifié. Parlée par environ 300 millions de personnes sur cinq
+            continents, la langue française est officielle dans 29 pays, et est
+            utilisée dans des régions variées comme l'Europe, l'Afrique, les
+            Caraïbes, et même le Pacifique. Apprendre le français, c'est
+            s'ouvrir à un réseau de pays francophones avec des cultures
+            fascinantes, des traditions uniques et des opportunités
+            internationales
+          </p>
           <Map />
         </div>
       </div>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import gift from "../assets/images/gift.jpeg";
 import Testimonials from "../components/Testimonials";
-import InstagramBanner from "../components/InstagramBanner";
 
 const Home = () => {
   return (
@@ -13,11 +12,12 @@ const Home = () => {
       <h1 className="title">Accueil</h1>
       <div className="banner">
         <p>
-          Pour parler enfin couramment français ! Je t’aide à progresser en
-          français et à parler avec assurance. Grace à mon programme tu vas
-          pouvoir comprendre les français et échanger avec eux, prendre
-          confiance en toi et atteindre tes objectifs que ce sois pour voyager,
-          pour vivre en France ou tout simplement pour le plaisir !
+        <span>Pour parler enfin couramment français !</span><br />
+          Je t’aide à progresser en français et à parler avec assurance. Grace à
+          mon programme tu vas pouvoir comprendre les français et échanger avec
+          eux, prendre confiance en toi et atteindre tes objectifs que ce sois
+          pour voyager, pour vivre en France ou tout simplement pour le plaisir
+          !
         </p>
         <Link to="/services" className="btn">
           En savoir plus
@@ -47,13 +47,6 @@ const Home = () => {
           loading="lazy"
         ></iframe>
       </div>
-      <div className="instaFeed">
-        <h2>Retrouve moi sur Instagram</h2>
-        <div className="instaBanner">
-            <InstagramBanner />
-            <p><i>Bannière Insta</i></p>
-        </div>
-      </div>
       <div className="moreInfo">
         <h2>Plus d'informations</h2>
         <p>
@@ -82,7 +75,11 @@ const Home = () => {
             src="https://app.mailjet.com/pas-nc-embedded-v1.js"
           ></script>
         </div>
-        <Link target="_blank" to="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a" className="btn">
+        <Link
+          target="_blank"
+          to="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a"
+          className="btn"
+        >
           Si le formulaire ne s'affiche pas correctement, clique ici ↗
         </Link>
       </div>
