@@ -1,0 +1,55 @@
+@import "../setting";
+
+.FAQComponent {
+  .container {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: darken($color-quaternary, 5%);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .card {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #fefefe;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+
+      .card-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0 1rem;
+
+        p {
+          font-size: 1rem;
+          line-height: 1.8;
+        }
+      }
+
+      &.active {
+        .card-body {
+          max-height: 500px; // Ajustez cette valeur en fonction de la hauteur maximale attendue du contenu
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+}

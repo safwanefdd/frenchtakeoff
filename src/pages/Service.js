@@ -77,13 +77,13 @@ const Service = () => {
             </div>
             <div className="niveau">
                 <h2>Quel niveau suis-je ?</h2>
-                <p>Tu ne connais pas ton niveau ? <Link target="_blank" to="/test-de-francais"> Clique ici ↗ </Link>pour
+                <p>Tu ne connais pas ton niveau ? <Link target="_blank" to="/construction"> Clique ici ↗ </Link>pour
                     faire un test !</p>
             </div>
             <div className={"appel"}>
                 <h2>Besoin d'aide ? Un appel</h2>
                 <p>Si tu as des questions ou besoin d’aide pour choisir ton cours, Je te propose un appel visio gratuit
-                    de 20 minutes. Tu pourras m’expliquer tes objectifs et tes besoins. Je t’expliquerai le
+                    de 30 minutes. Tu pourras m’expliquer tes objectifs et tes besoins. Je t’expliquerai le
                     fonctionnement, mon offre et les tarifs des cours.
                 </p>
                 <Link className={"btn"} to={"https://calendly.com/french-take-off/appel-gratuit"} target={"_blank"}>Réserver un appel</Link>

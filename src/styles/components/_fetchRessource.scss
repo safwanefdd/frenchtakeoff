@@ -42,7 +42,7 @@
 
     .contentContainer {
       padding: 15px;
-      background-color: $color-quaternary;
+      background-color: lighten($color-quaternary, 5%);
       h3 {
         margin-bottom: 10px;
         font-size: 1.2rem;

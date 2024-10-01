@@ -1,0 +1,12 @@
+@import "../setting";
+
+.enConstructionPage {
+    
+    .enConstructionContainer {
+        height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

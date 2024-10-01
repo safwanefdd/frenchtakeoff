@@ -12,15 +12,22 @@ const About = () => {
       <div className="infoContainer">
         <div className="info">
           <h2>Qui suis-je ?</h2>
+          <div className="imgContainer"></div>
           <p>
-            Salut, je m'appelle Nathalie. Passionnée par l’éducation, j’ai
-            commencé par suivre une formation Montessori avant de travailler
-            avec des enfants, puis des adultes. Au fil des années, j'ai acquis
-            une solide expérience en tant que bénévole dans l'alphabétisation et
-            l'enseignement du français. En 2019, avec l’arrivée du Covid, j’ai
-            décidé de me tourner vers l'enseignement en ligne. Et comme cette
-            expérience m'a beaucoup plu, j'ai choisi de m'y consacrer
-            entièrement.
+            Salut, je m'appelle Nathalie !<br />
+            Je suis née dans les Vosges et j'ai vécu en Bretagne, en région
+            parisienne puis en Auvergne. Actuellement J’habite sur la Côte
+            d'Azur, dans le sud de la France.
+          </p>
+          <p>
+            Passionnée par l’éducation, j’ai obtenu plusieurs diplômes dans ce
+            domaine dont un diplôme Montessori et le DAEFLE de l’Alliance
+            Française. J’ai commencé par enseigner aux enfants puis je me suis
+            orientée vers les adultes. Au fil des années, j'ai acquis une solide
+            expérience en tant que bénévole dans l'alphabétisation et
+            l'enseignement du français. En 2019, avec l’arrivée du Covid, je me
+            suis tournée vers l'enseignement en ligne. J’ai beaucoup apprécié
+            cette expérience et j’ai donc décidé de m’y consacrer entierement.
           </p>
           <p>
             Mon approche pédagogique repose sur l’accompagnement personnalisé et
@@ -28,30 +35,29 @@ const About = () => {
             sois débutant ou que tu souhaites perfectionner tes compétences, je
             suis là pour te guider pas à pas. Mon objectif est de rendre
             l’apprentissage du français non seulement accessible, mais aussi
-            amusant et stimulant.
+            amusant et stimulant
           </p>
           <p>
-            Dans mes cours, je mets un point d'honneur à utiliser des méthodes
-            modernes et interactives, tout en intégrant les principes Montessori
-            qui favorisent l’autonomie et la confiance en soi. Je crée un
-            environnement d’apprentissage dynamique où tu peux progresser à ton
-            propre rythme, avec des outils en ligne innovants pour rendre chaque
-            leçon engageante et motivante.
+            Dans mes cours, j’utilise des méthodes modernes et interactives,
+            tout en intégrant les principes Montessori qui favorisent
+            l’autonomie et la confiance en soi. Je crée un environnement
+            d’apprentissage dynamique où tu peux progresser à ton propre rythme.
           </p>
           <p>
-            Pourquoi choisir mes cours en ligne ? <br />
-            Avec plusieurs années d'expérience, j'ai développé une approche
-            unique qui allie pédagogie bienveillante et utilisation des
+            Pourquoi choisir mes cours ?<br />
+            Avec plusieurs années d'expérience et des centaines d’étudiants
+            accompagnés dans leur parcours linguistique, j'ai développé une
+            approche unique qui allie pédagogie bienveillante et utilisation des
             technologies numériques. Mes élèves apprécient particulièrement ma
             capacité à rendre l'apprentissage du français fluide et naturel.
             Ensemble, nous ferons de l’apprentissage une aventure enrichissante
             et épanouissante.
           </p>
           <p>
-            Si tu es prêt(e) à te lancer dans l'apprentissage du français avec
-            moi, n'hésite pas à me contacter pour en savoir plus sur mes
-            services. Ensemble, nous transformerons ton apprentissage en
-            réussite !
+            Si tu souhaites te lancer dans l'apprentissage du français avec moi,
+            n'hésite pas à me contacter pour en savoir plus sur mes services.
+            Ensemble, nous transformerons ton apprentissage en réussite !
+            <br /> Prêt(e) ?
           </p>
         </div>
         <div className="banner">

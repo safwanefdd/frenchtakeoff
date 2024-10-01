@@ -1,8 +1,10 @@
+@import "../setting";
+
 .aboutPage {
   .info {
     padding: 2rem;
     margin: 2rem 0;
-    background: #f4f4f4;
+    background: #fefefe;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
@@ -13,6 +15,14 @@
 
     .btn {
       margin-top: 1rem;
+    }
+
+    .imgContainer {
+      margin: 1rem 50%;
+      transform: translateX(-50%);
+      height: 200px;
+      width: 200px;
+      background: url(../../assets/images/nathalie.jpg) no-repeat center/cover;
     }
   }
 

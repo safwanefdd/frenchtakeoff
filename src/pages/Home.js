@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import gift from "../assets/images/gift.jpeg";
 import Testimonials from "../components/Testimonials";
+import FAQ from "../components/FAQ";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <div className="banner">
         <p>
         <span>Pour parler enfin couramment français !</span><br />
-          Je t’aide à progresser en français et à parler avec assurance. Grace à
+          Je t’aide à progresser en français et à parler avec assurance.<br />Grace à
           mon programme tu vas pouvoir comprendre les français et échanger avec
           eux, prendre confiance en toi et atteindre tes objectifs que ce sois
           pour voyager, pour vivre en France ou tout simplement pour le plaisir
@@ -85,6 +86,7 @@ const Home = () => {
       </div>
       <div className="testimonialsContainer">
         <Testimonials />
+        <FAQ />
       </div>
       <Footer />
     </div>
