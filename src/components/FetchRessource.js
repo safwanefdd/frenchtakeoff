@@ -1,27 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { isEmpty } from "./Utils"; // Assurez-vous que cette fonction est bien définie
-import axios from "axios";
+import React from "react";
+import { isEmpty } from "./Utils";
 
 const FetchRessource = () => {
-  const [ressources, setRessources] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("/data/ressources.json") // Utiliser un chemin correct
-      .then((response) => {
-        console.log("Données récupérées:", response.data); // Affiche les données
-        setRessources(response.data.ressources); // Accède directement aux ressources
-      })
-      .catch((error) =>
-        console.error("Erreur lors de la récupération des ressources:", error)
-      );
-  }, []);
+  const ressources = [
+    {
+      id: "1",
+      name: "Ebook Vacances",
+      description: "Un super ebook pour préparer vos vacances",
+      image: "/ressources/vacances.jpg", // Assurez-vous que le chemin est correct
+      link: "https://github.com/safwanefdd/FrenchTakeOff_Ressources/blob/main/ebook_vacances.pdf.zip",
+    },
+    {
+      id: "2",
+      name: "Découvre Marseille",
+      description: "Un guide pour découvrir Marseille",
+      image: "/ressources/marseille.jpg", // Assurez-vous que le chemin est correct
+      link: "https://github.com/safwanefdd/FrenchTakeOff_Ressources/blob/main/Ebook%20de%CC%81couverte%20Marseille.pdf.zip",
+    },
+  ];
 
   return (
     <div className="fetchRessourcesComponent">
       <h2>Liste des Ressources</h2>
       <div className="ressourcesList">
-        {!isEmpty(ressources) ? ( // Vérifie si les ressources ne sont pas vides
+        {!isEmpty(ressources) ? (
           ressources.map((ressource) => (
             <div key={ressource.id} className="ressourceCard">
               <div className="imageContainer">

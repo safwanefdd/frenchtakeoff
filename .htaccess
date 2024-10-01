@@ -1,4 +1,11 @@
 Options -MultiViews
 RewriteEngine On
+RewriteBase /
+
+# Redirige les requêtes vers index.html pour React Router
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirection pour éviter les slashes finaux
+RewriteRule ^ressources/?$ /ressources [L]
+RewriteRule ^ index.html [L]
