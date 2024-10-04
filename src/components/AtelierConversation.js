@@ -26,7 +26,7 @@ const AtelierConversation = () => {
                     </li>
                     <br/>
                     <li>
-                        Tu as accès au Club French_Take_Off sur Discord qui te permets de me poser des questions et
+                        Tu as accès au Club French_Take_Off sur Discord qui te permet de me poser des questions et
                         d’échanger avec les autres apprenants. Tu as également accès à des ressources en français et tu
                         peux deposer tes devoirs que je corrigerai.
                     </li>

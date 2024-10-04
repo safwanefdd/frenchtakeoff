@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+
 const Navigation = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navigation = () => {
                         <NavLink to='/services' className={(nav) => (nav.isActive ? "nav-active" : "")} > Mes services </NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink target='_blank' to='https://billing.stripe.com/p/login/3cs03h1N409K5WM288' className={(nav) => (nav.isActive ? "nav-active" : "")} > Mon Espace ↗ </NavLink>
+                        <NavLink target='_blank' to='https://billing.stripe.com/p/login/3cs03h1N409K5WM288' className={(nav) => (nav.isActive ? "nav-active" : "")} > Mon Espace <i class="fa-solid fa-arrow-up-right-from-square"></i> </NavLink>
                     </li>
                 </ul>
             </nav>

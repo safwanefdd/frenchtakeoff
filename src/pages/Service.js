@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 
+
 const Service = () => {
     const [activeService, setActiveService] = useState("cours");
 
@@ -15,7 +16,7 @@ const Service = () => {
     return (
         <div className="servicePage">
             <Navigation/>
-            <h1 className="title">Nos Services</h1>
+            <h1 className="title">Mes Services</h1>
             <div className="desc">
                 <p>
                     Mes cours sont entièrement personnalisés. Je m’adapte à tes demandes
@@ -77,7 +78,7 @@ const Service = () => {
             </div>
             <div className="niveau">
                 <h2>Quel niveau suis-je ?</h2>
-                <p>Tu ne connais pas ton niveau ? <Link target="_blank" to="/construction"> Clique ici ↗ </Link>pour
+                <p>Tu ne connais pas ton niveau ? <Link target="_blank" to="/test-de-niveau"> Clique ici <i class="fa-solid fa-arrow-up-right-from-square"></i> </Link>pour
                     faire un test !</p>
             </div>
             <div className={"appel"}>

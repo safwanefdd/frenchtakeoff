@@ -5,15 +5,17 @@ import Footer from "../components/Footer";
 import gift from "../assets/images/gift.jpeg";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
+import CopyButton from "../components/CopyButton";
 
 const Home = () => {
   return (
     <div className="homePage">
       <Navigation />
       <h1 className="title">Accueil</h1>
+      <CopyButton messageACopier="test" />
       <div className="banner">
         <p>
-        <span>Pour parler enfin couramment français !</span><br />
+        <span>Pour parler ENFIN couramment français !</span><br />
           Je t’aide à progresser en français et à parler avec assurance.<br />Grace à
           mon programme tu vas pouvoir comprendre les français et échanger avec
           eux, prendre confiance en toi et atteindre tes objectifs que ce sois
@@ -30,7 +32,7 @@ const Home = () => {
           <img src={gift} alt="gift" />
         </div>
         <Link target="_blank" to="/ressources" className="btn">
-          Télécharger ↗
+          Télécharger <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </Link>
       </div>
       <div className="podcastSpotify">
@@ -81,7 +83,7 @@ const Home = () => {
           to="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a"
           className="btn"
         >
-          Si le formulaire ne s'affiche pas correctement, clique ici ↗
+          Si le formulaire ne s'affiche pas correctement, clique ici <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </Link>
       </div>
       <div className="testimonialsContainer">

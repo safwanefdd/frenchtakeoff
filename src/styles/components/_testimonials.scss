@@ -5,14 +5,14 @@
   gap: 1rem;
 
   .card {
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: calc(33.333% - 1rem);
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
     border-radius: 8px;
     transition: transform 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; // Indique que c'est cliquable
+    cursor: pointer;
 
     img {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
