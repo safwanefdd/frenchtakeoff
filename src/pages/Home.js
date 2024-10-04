@@ -5,14 +5,12 @@ import Footer from "../components/Footer";
 import gift from "../assets/images/gift.jpeg";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
-import CopyButton from "../components/CopyButton";
 
 const Home = () => {
   return (
     <div className="homePage">
       <Navigation />
       <h1 className="title">Accueil</h1>
-      <CopyButton messageACopier="test" />
       <div className="banner">
         <p>
         <span>Pour parler ENFIN couramment français !</span><br />

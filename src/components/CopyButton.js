@@ -11,25 +11,16 @@ const CopyButton = ({ messageACopier }) => {
   };
 
   return (
-    <div>
-      <button onClick={handleCopy}>{messageACopier}</button>
+    <div className="copyButtonComponent">
+      <button className="animatedButton" onClick={handleCopy}>
+        {messageACopier}
+      </button>
 
       {showMessage && (
-        <div style={messageStyle}>Le contenu a bien été copié !</div>
+        <div className="success">Le contenu a bien été copié !</div>
       )}
     </div>
   );
-};
-
-const messageStyle = {
-  position: "fixed",
-  bottom: "20px",
-  right: "20px",
-  backgroundColor: "green",
-  color: "white",
-  padding: "10px",
-  borderRadius: "5px",
-  zIndex: 1000,
 };
 
 export default CopyButton;
