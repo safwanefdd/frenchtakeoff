@@ -10,15 +10,27 @@ const Home = () => {
   return (
     <div className="homePage">
       <Navigation />
+      <div className="marqueeContainer">
+        <div className="marquee">
+          <h3>
+            Teste ton niveau en français{" "}
+            <Link target="_blank" to="/test-de-niveau">
+              ICI
+            </Link>
+          </h3>
+        </div>
+      </div>
       <h1 className="title">Accueil</h1>
       <div className="banner">
         <p>
-        <span>Pour parler ENFIN couramment français !</span><br />
-          Je t’aide à progresser en français et à parler avec assurance.<br />Grace à
-          mon programme tu vas pouvoir comprendre les français et échanger avec
-          eux, prendre confiance en toi et atteindre tes objectifs que ce sois
-          pour voyager, pour vivre en France ou tout simplement pour le plaisir
-          !
+          <span>Pour parler ENFIN couramment français !</span>
+          <br />
+          Je t’aide à progresser en français et à parler avec assurance.
+          <br />
+          Grace à mon programme tu vas pouvoir comprendre les français et
+          échanger avec eux, prendre confiance en toi et atteindre tes objectifs
+          que ce sois pour voyager, pour vivre en France ou tout simplement pour
+          le plaisir !
         </p>
         <Link to="/services" className="btn">
           En savoir plus
@@ -81,7 +93,8 @@ const Home = () => {
           to="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a"
           className="btn"
         >
-          Si le formulaire ne s'affiche pas correctement, clique ici <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Si le formulaire ne s'affiche pas correctement, clique ici{" "}
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </Link>
       </div>
       <div className="testimonialsContainer">
