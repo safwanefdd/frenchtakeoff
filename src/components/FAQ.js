@@ -69,7 +69,7 @@ const faqData = [
     question: "Je ne connais pas mon niveau de français. Quel cours choisir ?",
     answer: () => (
       <>
-        Tu peux passer le test gratuit <Link to="/construction" target="_blank">ICI</Link> pour découvrir ton niveau. Tu peux
+        Tu peux passer le test gratuit <Link to="/test-de-niveau" target="_blank">ICI</Link> pour découvrir ton niveau. Tu peux
         aussi réserver un appel gratuit d’environ 30minutes avec moi.
         J’évaluerai ton niveau de français et, selon tes besoins et objectifs,
         je te conseillerai le cours qui te correspond le mieux. Cet appel est

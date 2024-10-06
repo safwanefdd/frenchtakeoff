@@ -38,7 +38,7 @@ const AtelierConversation = () => {
                     <br/>
                     <li>
                         Pendant le cours, tu t’exprimes, tu discutes avec des personnes originaires du monde entier sur
-                        un sujet intéressant. Je corrige tes erreurs , je te guide et je t’apprends plein de choses sur
+                        un sujet intéressant. Je corrige tes erreurs , je te guide et tu apprends plein de choses sur
                         le sujet ! Nous passons une heure super agréable et amusante!
                     </li>
                     <br/>

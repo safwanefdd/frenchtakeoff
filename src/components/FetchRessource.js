@@ -19,10 +19,10 @@ const FetchRessource = () => {
     },
     {
       id: "3",
-      name: "Ton guide de voyage en France",
+      name: "Voyage en France",
       description: "Un guide pour voyager en France !",
       image: "/ressources/3-Ton_Guide_De_Voyage_En_France.jpg", // Assurez-vous que le chemin est correct
-      link: "https://github.com/safwanefdd/FrenchTakeOff_Ressources/blob/main/Guide_de_voyage_en_France.zip",
+      link: "https://github.com/safwanefdd/FrenchTakeOff_Ressources/blob/main/Guide%20de%20voyage%20en%20France.pdf.zip",
     }
   ];
 
@@ -41,7 +41,7 @@ const FetchRessource = () => {
                 <p>{ressource.description}</p>
                 <a
                   href={ressource.link + "?raw=true"}
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   className="btn"
                 >
