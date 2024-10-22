@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
-import samplePDF from '../assets/PDF/Conditions générales de vente.pdf';
+import samplePDF from '../assets/PDF/CGV.pdf';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 

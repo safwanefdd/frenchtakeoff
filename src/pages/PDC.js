@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
-import samplePDF from '../assets/PDF/Politique de confidentialité.pdf';
+import samplePDF from '../assets/PDF/PDC.pdf';
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 

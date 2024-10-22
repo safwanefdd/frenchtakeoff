@@ -8,6 +8,7 @@ import PDC from "./pages/PDC";
 import Admin from "./pages/Admin";
 import EnConstruction from "./pages/EnConstruction";
 import TestNiveau from "./pages/TestNiveau";
+import FormToGift from "./pages/FormToGift";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/services" element={<Service />} />
           <Route path="/651a430d784m362i399n5887849273473289" element={<Admin />} />
           <Route path="/ressources" element={<Ressources />} />
+          <Route path="/formulaire/:id" element={<FormToGift />} />
           <Route path="/test-de-niveau" element={<TestNiveau />} />
           <Route path="/construction" element={<EnConstruction />} />
           <Route path="/cgv" element={<CGV />} />

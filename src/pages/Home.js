@@ -41,7 +41,7 @@ const Home = () => {
         <div className="image">
           <img src={gift} alt="gift" />
         </div>
-        <Link target="_blank" to="/ressources" className="btn">
+        <Link target="_blank" to="/construction" className="btn">
           Télécharger <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </Link>
       </div>

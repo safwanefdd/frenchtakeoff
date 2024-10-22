@@ -1,0 +1,93 @@
+@import "../setting";
+
+.enConstructionPage {
+
+    .enConstructionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+
+        h1 {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+
+            // Responsive for iPhone SE
+            @media screen and (min-width: 320px) {
+                font-size: 1.7rem;
+            }
+
+            // Responsive for iPhone 6/7/8
+            @media screen and (min-width: 375px) {
+                font-size: 2rem;
+            }
+
+            // Responsive for iPhone 6/7/8 Plus
+            @media screen and (min-width: 414px) {
+                font-size: 2.3rem;
+            }
+
+            // Responsive for iPad
+            @media screen and (min-width: 768px) {
+                font-size: 2.5rem;
+            }
+
+            // Responsive for iPad Pro
+            @media screen and (min-width: 1024px) {
+                font-size: 2.7rem;
+            }
+
+            // Responsive for 4K
+            @media screen and (min-width: 2560px) {
+                font-size: 3rem;
+            }
+
+            // Responsive for 8K
+            @media screen and (min-width: 7680px) {
+                font-size: 3.5rem;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            // Responsive for iPhone SE
+            @media screen and (min-width: 320px) {
+                font-size: 1.2rem;
+            }
+
+            // Responsive for iPhone 6/7/8
+            @media screen and (min-width: 375px) {
+                font-size: 1.3rem;
+            }
+
+            // Responsive for iPhone 6/7/8 Plus
+            @media screen and (min-width: 414px) {
+                font-size: 1.4rem;
+            }
+
+            // Responsive for iPad
+            @media screen and (min-width: 768px) {
+                font-size: 1.5rem;
+            }
+
+            // Responsive for iPad Pro
+            @media screen and (min-width: 1024px) {
+                font-size: 1.6rem;
+            }
+
+            // Responsive for 4K
+            @media screen and (min-width: 2560px) {
+                font-size: 1.7rem;
+            }
+
+            // Responsive for 8K
+            @media screen and (min-width: 7680px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
