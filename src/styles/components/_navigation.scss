@@ -1,12 +1,24 @@
+@import "../setting";
+
 .NavigationBar {
   background-color: $color-quaternary;
-  padding: 1rem 1rem;
+  padding: 15px; /* Ajustement du padding pour éviter de décaler la position */
   box-shadow: 0 2px 4px rgba($color-dark, 0.1);
-  transition: background-color 0.3s ease;
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
+  transition: transform 0.3s ease; /* Changer de `all` à `transform` pour éviter des animations non voulues */
+  position: fixed;
+  top: 0; /* Fixe bien la barre en haut */
+  left: 0; /* S'assure que la barre est bien alignée à gauche */
+  width: 100%; /* Assure une largeur correcte sans dépasser la fenêtre */
   box-sizing: border-box;
+  z-index: 9999;
+
+  &.hidden {
+    transform: translateY(-100%); /* Assure que la barre disparaît complètement vers le haut */
+  }
+
+  &.visible {
+    transform: translateY(0); /* Assure que la barre est bien en place */
+  }
 
   &:hover {
     background-color: lighten($color-quaternary, 5%);
@@ -20,8 +32,13 @@
 
     @media (max-width: 768px) {
       display: block;
-      width: 100%;
-      box-sizing: border-box;
+      background: none;
+      border: none;
+      outline: none;
+      position: relative;
+      top: 1rem;
+      right: 1rem;
+      margin: 15px;
     }
   }
 

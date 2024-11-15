@@ -87,7 +87,7 @@ const Service = () => {
                     de 30 minutes. Tu pourras m’expliquer tes objectifs et tes besoins. Je t’expliquerai le
                     fonctionnement, mon offre et les tarifs des cours.
                 </p>
-                <Link className={"btn"} to={"https://calendly.com/french-take-off/appel-gratuit"} target={"_blank"}>Réserver un appel</Link>
+                <Link className={"btn"} to={"https://calendly.com/french-takeoff/30min?fbclid=PAY2xjawGkhKBleHRuA2FlbQIxMQABpvRPoT6xqBxmWhHkglLG3HyPPQdxJh0PrS1utlONH6NZZ2hcEfOT1aJ2JQ_aem_2LbaDtG9NjSTAs4x25MVBQ&month=2024-11"} target={"_blank"}>Réserver un appel</Link>
             </div>
                 <Footer/>
             </div>

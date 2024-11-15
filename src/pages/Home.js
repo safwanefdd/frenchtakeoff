@@ -5,21 +5,12 @@ import Footer from "../components/Footer";
 import gift from "../assets/images/gift.jpeg";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
+import NewsLetter from "../components/NewsLetter";
 
 const Home = () => {
   return (
     <div className="homePage">
       <Navigation />
-      <div className="marqueeContainer">
-        <div className="marquee">
-          <h3>
-            Teste ton niveau en français{" "}
-            <Link target="_blank" to="/test-de-niveau">
-              ICI
-            </Link>
-          </h3>
-        </div>
-      </div>
       <h1 className="title">Accueil</h1>
       <div className="banner">
         <p>
@@ -73,30 +64,7 @@ const Home = () => {
           En savoir plus
         </Link>
       </div>
-      <div className="newsletterContainer">
-        <h2>Newsletter</h2>
-        <div className="form">
-          <iframe
-            title="Newsletter Signup Form"
-            data-w-type="embedded"
-            scrolling="no"
-            src="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a"
-          ></iframe>
-
-          <script
-            type="text/javascript"
-            src="https://app.mailjet.com/pas-nc-embedded-v1.js"
-          ></script>
-        </div>
-        <Link
-          target="_blank"
-          to="https://svo8n.mjt.lu/wgt/svo8n/xt0w/form?c=8d44428a"
-          className="btn"
-        >
-          Si le formulaire ne s'affiche pas correctement, clique ici{" "}
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </Link>
-      </div>
+      <NewsLetter />
       <div className="testimonialsContainer">
         <Testimonials />
         <FAQ />

@@ -1,0 +1,141 @@
+@import "../setting";
+
+.ressourcesPage {
+  .ressourcesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ressourceCard {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $color-dark;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .imageContainer {
+      width: 250px;
+      height: 150px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .contentContainer {
+      padding: 15px;
+      background-color: lighten($color-quaternary, 5%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: $color-primary;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        color: $color-dark;
+
+        // Truncate text
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: $color-primary;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: $color-dark;
+          background-color: $color-tertiary;
+          transform: translateY(-2px);
+        }
+      }
+    }
+
+    // Pour gérer le style du Modal
+    .ReactModal__Overlay {
+      background-color: rgba(0, 0, 0, 0.75) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ReactModal__Content {
+      color: whitesmoke !important;
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      outline: none;
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-block;
+        background-color: $color-primary;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: $color-tertiary;
+          color: $color-dark;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $color-dark;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

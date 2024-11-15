@@ -1,21 +1,45 @@
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-
 const Navigation = () => {
-
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    useEffect(() => {
+        // Gestion du scroll
+        const handleScroll = () => {
+            if (window.scrollY > lastScrollY) {
+                // On cache la barre si on descend
+                setIsVisible(false);
+            } else {
+                // On montre la barre si on remonte
+                setIsVisible(true);
+            }
+            setLastScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollY]);
+
     return (
-        <div className='NavigationBar'>
-            <div className='burger-menu' onClick={toggleMenu}>
+        <header className={`NavigationBar ${isVisible ? 'visible' : 'hidden'}`}>
+            <button
+                className='burger-menu'
+                onClick={toggleMenu}
+                aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+                aria-expanded={isOpen}
+            >
                 {isOpen ? <FaTimes /> : <FaBars />}
-            </div>
+            </button>
             <nav className={`navigation ${isOpen ? 'open' : ''}`}>
                 <ul className="pageLink">
                     <li className='nav-item'>
@@ -28,11 +52,11 @@ const Navigation = () => {
                         <NavLink to='/services' className={(nav) => (nav.isActive ? "nav-active" : "")} > Mes services </NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink target='_blank' to='https://billing.stripe.com/p/login/3cs03h1N409K5WM288' className={(nav) => (nav.isActive ? "nav-active" : "")} > Mon Espace <i class="fa-solid fa-arrow-up-right-from-square"></i> </NavLink>
+                        <NavLink target='_blank' to='https://billing.stripe.com/p/login/3cs03h1N409K5WM288' className={(nav) => (nav.isActive ? "nav-active" : "")} > Mon Espace <i className="fa-solid fa-arrow-up-right-from-square"></i> </NavLink>
                     </li>
                 </ul>
             </nav>
-        </div>
+        </header>
     );
 };
 

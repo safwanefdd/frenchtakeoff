@@ -42,6 +42,11 @@ const TestNiveauQuiz = () => {
           "B2 ! Chapeau ! Ton français est vraiment solide, tu t’approches du niveau expert ! 🎩"
         );
         setShowConfetti(true); // Montre les confettis pour B2
+      } else if (score <= 38) {
+        setResultMessage(
+          "C1 ! Félicitations ! Tu es un expert de la langue française ! Tu es prêt pour les plus grands défis ! 🚀"
+        );
+        setShowConfetti(true); // Montre les confettis pour C1
       }
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
@@ -52,7 +57,7 @@ const TestNiveauQuiz = () => {
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
 
   console.log(questions.length);
-  
+
 
   return (
     <div className="testNiveauQuizComponent">
