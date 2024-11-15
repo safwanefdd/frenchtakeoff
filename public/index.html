@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
+    <!-- Meta Tags pour le SEO -->
     <meta property="og:title" content="French Take Off" />
     <meta
       property="og:description"
@@ -12,10 +13,9 @@
     />
     <meta
       property="og:image"
-      content="https://www.french-take-off.com/assets/images/Logo%20French%20Take%20Off%20-%20bis.png"
+      content="/assets/images/logo-french-take-off.png"
     />
     <meta property="og:url" content="https://www.french-take-off.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="French Take Off" />
     <meta
@@ -24,37 +24,49 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.french-take-off.com/assets/images/Logo%20French%20Take%20Off%20-%20bis.png"
+      content="/assets/images/logo-french-take-off.png"
     />
-
-    <script
-      src="https://kit.fontawesome.com/840f63a7f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-
     <meta
       name="description"
       content="Découvrez French Take Off, votre site pour apprendre le français avec des cours privés, des ateliers de conversation et des ebooks gratuits. Inscrivez-vous dès maintenant !"
     />
 
+    <!-- Icônes et Manifest -->
     <link
       rel="apple-touch-icon"
-      href="https://www.french-take-off.com/Logo%20French%20Take%20Off%20-%20bis.png"
+      href="%PUBLIC_URL%/logo-french-take-off-bis.png"
     />
-    <!-- <link rel="manifest" href="https://www.french-take-off.com/manifest.json" /> -->
+    <link rel="manifest" href="/manifest.json" />
     <link
       rel="icon"
-      href="https://www.french-take-off.com/Logo%20French%20Take%20Off%20-%20bis.png"
+      href="%PUBLIC_URL%/logo-french-take-off-bis.png"
       type="image/png"
+      />
+      
+      <link
+      rel="shortcut icon"
+      href="%PUBLIC_URL%/logo-french-take-off-bis.png"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome (utilisation locale recommandée) -->
+    <script
+      src="https://kit.fontawesome.com/e3414d9768.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MapBox CSS -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css"
+      rel="stylesheet"
     />
 
     <title>French Take Off - Apprendre le français facilement</title>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Fichiers JavaScript (inclure les fichiers compilés ici) -->
+    <script src="/static/js/main.js"></script>
   </body>
 </html>
