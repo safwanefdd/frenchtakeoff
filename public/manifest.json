@@ -3,12 +3,12 @@
   "name": "French Take Off - Learn French",
   "icons": [
     {
-      "src": "/logo-french-take-off-bis.png",
+      "src": "%PUBLIC_URL%/logo-french-take-off-bis.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/logo-french-take-off.png",
+      "src": "%PUBLIC_URL%/logo-french-take-off.png",
       "type": "image/png",
       "sizes": "512x512"
     }

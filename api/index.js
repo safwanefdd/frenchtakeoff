@@ -3,6 +3,7 @@ const mysql = require('mysql2'); // Utilisation de mysql2 pour la compatibilité
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const multer = require('multer');
+const path = require('path'); // Importation de path pour gérer les chemins de fichiers
 require('dotenv').config(); // Utilisation de dotenv pour les variables d'environnement
 
 // Configuration de stockage pour multer
@@ -22,8 +23,6 @@ const connection = mysql.createPool({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     port: process.env.DB_PORT,
-    // Suppression des options invalides
-    // Configuration SSL si requis, ou laisser vide
     ssl: { rejectUnauthorized: false }, // Mettre `ssl: undefined` si SSL n'est pas requis
 });
 
@@ -36,7 +35,10 @@ connection.getConnection((err) => {
     console.log('Connecté au pool de connexions MySQL');
 });
 
-// Route pour gérer le formulaire (ajout de données)
+// Servir les fichiers statiques du dossier build
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Routes API
 app.post('/submit-form', (req, res) => {
     const { nom, prenom, email } = req.body;
 
@@ -55,7 +57,6 @@ app.post('/submit-form', (req, res) => {
     });
 });
 
-// Route pour récupérer tous les utilisateurs (affichage de données)
 app.get('/utilisateurs', (req, res) => {
     connection.query('SELECT * FROM user', (err, results) => {
         if (err) {
@@ -66,7 +67,6 @@ app.get('/utilisateurs', (req, res) => {
     });
 });
 
-// Route pour récupérer un utilisateur par son ID
 app.get('/utilisateurs/:id', (req, res) => {
     const id = req.params.id;
     connection.query('SELECT * FROM user WHERE id = ?', [id], (err, results) => {
@@ -81,7 +81,6 @@ app.get('/utilisateurs/:id', (req, res) => {
     });
 });
 
-// Route pour récupérer les ebooks
 app.get('/ebooks', (req, res) => {
     connection.query('SELECT * FROM ebook', (error, results) => {
         if (error) {
@@ -92,7 +91,6 @@ app.get('/ebooks', (req, res) => {
     });
 });
 
-// Route pour ajouter un ebook
 app.post('/ebooks', upload.single('image'), (req, res) => {
     const { nom, description, url } = req.body;
     const image = req.file ? req.file.buffer.toString('base64') : null;
@@ -111,6 +109,13 @@ app.post('/ebooks', upload.single('image'), (req, res) => {
     });
 });
 
+// Rediriger toutes les autres requêtes vers `index.html`
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // Démarrage du serveur
-module.exports = app;
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Serveur lancé sur le port ${PORT}`);
+});
