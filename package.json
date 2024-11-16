@@ -39,6 +39,7 @@
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
     "sass": "^1.79.2",
+    "serve": "^14.2.4",
     "vercel": "^39.0.2",
     "web-vitals": "^2.1.4"
   },
