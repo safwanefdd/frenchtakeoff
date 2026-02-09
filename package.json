@@ -2,6 +2,7 @@
   "name": "french-take-off",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://safwanefdd.github.io/frenchtakeoff",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -44,11 +45,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "react-scripts build",
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "run": "node server.js",
+    "server": "node server.js",
     "dev": "nodemon server.js"
   },
   "eslintConfig": {
@@ -69,12 +70,8 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "gh-pages": "^6.1.1"
   }
 }
